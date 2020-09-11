@@ -1,0 +1,13 @@
+There is a scenario in which two objects exist at a time out of 3. You have to tell which of the two objects will survive based on the following rules:
+
+If Object 1 is Human, and object 2 is Cockroach; then the Human Survives
+If Object 1 is Cockroach, and object 2 is Nuclear Bomb, then Cockroach survives
+If Object 1 is Human, and Object 2 is Nuclear Bomb, then the Human dies.
+
+You will be using your UI tech stack(HTML + CSS) to make two boxes that take in two random numbers(IMPORTANT : RANGE IS 0-1000) and your code should output the result below them.(Hint: use Random function)
+
+Based on the above descriptions of the winner, given any two random numbers as inputs, your main task is to create a mapping between the above description objects(Human, Cockroach or Nuclear Bomb) and the numbers taken as input. An example to understand this better is as follows:
+
+Given a random number as 10, and the mapping that i have created is that {0: Human, 1: Cockroach and 2: Nuclear Bomb}, using the mapping and that can vary according to you, I know that 10 corresponds to 1 and that means that the object is a Cockroach and so on.(Hint: Use Modulo Function)
+Next, write a Javascript function that uses the above mapping and the conditions given above to decide who survives. If the mapping comes out to be the same for two random numbers, you have to return that it is a “TIE”. If it does not, then return whichever object wins, like Human, Cockroach or Nuclear Bomb. 
+

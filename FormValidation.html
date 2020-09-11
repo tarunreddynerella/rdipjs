@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+form validation
+</title>
+<style>
+.container {
+  border-radius: 5px;
+
+  padding: 20px;
+}
+.rw:after {
+  content: "";
+  display: table;
+  clear: both;
+ 
+}
+.col1 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.col2 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+</style>
+</head>
+<body>
+<script src="script.js"></script>
+<form>
+<div class="rw">
+    <div class="col1">
+      <label for="fname"><b>First Name:</b></label>
+    </div>
+    <div class="col2">
+      <input type="text" id="fname" name="user"required>
+    </div>
+  </div><br>
+  <div class="rw">
+    <div class="col1">
+      <label for="email"><b>E-mail:</b></label>
+    </div><br>
+    <div class="col2">
+      <input type="email" id="email" name="user" required>
+    </div>
+  </div><br>
+  
+  <div class="rw">
+    <div class="col1">
+      <label for="phn"><b>Phone No:</b></label>
+    </div>
+    <div class="col2">
+    <input type="tel" id="phn" name="user" pattern="[0-9]{10}" required>
+    </div>
+</div>
+ <button type="submit">Submit</button>
+</form>
+</body>
